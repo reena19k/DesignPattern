@@ -1,0 +1,19 @@
+package com.aurionpro.model;
+
+public class Delivered implements PackageState 
+{
+    //Singleton
+    private static Deliveredinstance = new Delivered();
+ 
+    private Delivered() {}
+ 
+    public static Deliveredinstance() {
+        return instance;
+    }
+     
+    //Business logic
+    @Override
+    public void updateState(DeliveryContext ctx) 
+    {
+        System.out.println("Package is delivered!!");
+    }

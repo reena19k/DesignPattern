@@ -1,0 +1,11 @@
+package com.aurionpro.model;
+
+public class XMLEmpdao implements IDao {
+
+	@Override
+	public void XMLEmpDao() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

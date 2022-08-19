@@ -1,0 +1,10 @@
+package com.aurionpro.model;
+
+public class DBDaoFactory implements DAOAbstractfactory {
+
+	@Override
+	public void createDao(String str) {
+System.out.println("DBDAO factory");
+	}
+
+}

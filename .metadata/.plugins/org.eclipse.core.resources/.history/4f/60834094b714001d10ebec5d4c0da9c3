@@ -1,0 +1,6 @@
+package com.aurionpro.model;
+
+public interface DAOAbstractfactory {
+	createDao(String str)
+
+}

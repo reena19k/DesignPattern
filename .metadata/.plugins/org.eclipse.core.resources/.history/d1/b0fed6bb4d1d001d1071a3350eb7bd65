@@ -1,0 +1,16 @@
+package com.aurionpro.model;
+
+public class Delivered implements PackageState 
+{
+ 
+  private Delivered() {}
+ 
+   
+     
+    //Business logic
+    @Override
+    public void updateState(DeliveryContext ctx) 
+    {
+        System.out.println("Package is delivered!!");
+    }
+}

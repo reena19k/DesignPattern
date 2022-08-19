@@ -1,0 +1,54 @@
+package com.aurionpro.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Customer {
+    private  int id;
+    private String name;
+    List<Order> orders = new ArrayList<>();
+
+
+    public Customer(int id, String name, List<Order> orders) {
+        this.id = id;
+        this.name = name;
+        this.orders = orders;
+    }
+
+    public Customer(){
+        this.orders=new ArrayList<Order>();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void addOrder(Order order){
+        orders.add(order);
+    }
+
+    public int getOrderCount(){
+        int count=0;
+        for(Order order:orders){
+            count++;
+        }
+        return count;
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name=" + name +
+                ", orders=" + orders +
+                '}';
+    }
+}
